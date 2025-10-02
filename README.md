@@ -39,4 +39,34 @@ This project demonstrates end-to-end data science/ML workflow:
 ---
 
 ## 📂 Repository Structure
+trade-anomaly-detection-dashboard/
+│
+├── data/ # Small samples only (no raw big data)
+├── notebooks/ # Exploratory analysis & prototyping
+├── src/ # Main source code
+│ ├── ingestion/ # Data collection scripts
+│ ├── preprocessing/ # Cleaning + feature engineering
+│ ├── modeling/ # ML + anomaly detection
+│ ├── evaluation/ # Metrics + validation
+│ ├── deployment/ # FastAPI app + Dockerfile
+│ └── dashboard/ # Streamlit app
+├── tests/ # Unit tests (pytest)
+├── docs/ # Documentation + diagrams
+└── README.md # Project overview
 
+---
+
+## 📦 Installation
+
+Clone this repo and install dependencies:
+
+```bash
+git clone https://github.com/nayjaycee/trade-anomaly-detection-dashboard.git
+cd trade-anomaly-detection-dashboard
+
+# Option 1: pip
+pip install -r requirements.txt
+
+# Option 2: conda
+conda env create -f environment.yml
+conda activate trade-anomaly
