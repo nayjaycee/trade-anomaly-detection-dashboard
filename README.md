@@ -80,7 +80,7 @@ python src/ingestion/comtrade_api.py
 Train Models
 python src/modeling/train.py
 Run Dashboard
-streamlit run src/dashboard/app.py
+streamlit run src/dashboard/app.py```
 
 ---
 
