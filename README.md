@@ -60,8 +60,12 @@ trade-anomaly-detection-dashboard/
 
 Clone this repo and install dependencies:
 
+## 📦 Installation
+
+Clone this repo and install dependencies:
+
 ```bash
-git clone https://github.com/nayjaycee/trade-anomaly-detection-dashboard.git
+git clone https://github.com/<your-username>/trade-anomaly-detection-dashboard.git
 cd trade-anomaly-detection-dashboard
 
 # Option 1: pip
@@ -70,19 +74,25 @@ pip install -r requirements.txt
 # Option 2: conda
 conda env create -f environment.yml
 conda activate trade-anomaly
-bash```
+```
+
 
 ---
 
 ## ▶️ Usage
 
-Run Data Pipeline
+```bash
+1. Run Data Pipeline
 python src/ingestion/comtrade_api.py
-Train Models
+```
+```bash
+2. Train Models
 python src/modeling/train.py
-Run Dashboard
+```
+```bash
+3. Run Dashboard
 streamlit run src/dashboard/app.py
-
+```
 ---
 
 ## 📈 Data Sources
