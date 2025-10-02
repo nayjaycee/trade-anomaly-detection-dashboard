@@ -70,3 +70,57 @@ pip install -r requirements.txt
 # Option 2: conda
 conda env create -f environment.yml
 conda activate trade-anomaly
+
+---
+
+## ▶️ Usage
+
+Run Data Pipeline
+python src/ingestion/comtrade_api.py
+Train Models
+python src/modeling/train.py
+Run Dashboard
+streamlit run src/dashboard/app.py
+
+---
+
+## 📈 Data Sources
+
+UN Comtrade
+
+World Trade Organization Statistics
+
+World Bank WITS
+
+U.S. Treasury OFAC Sanctions
+
+[EU & UN Sanctions Lists](https://data.europa.eu/en
+, https://www.un.org/securitycouncil/sanctions/information
+)
+
+UNCTAD Port Calls
+
+World Bank Development Indicators
+
+IMF Data
+
+GDELT Project
+
+---
+
+## 🌐 Dashboard Demo
+
+👉 Will be hosted on Streamlit Cloud.
+(Coming soon!)
+
+---
+
+## 🔮 Future Roadmap
+
+Add automated retraining pipelines with Prefect.
+
+Integrate Hugging Face embeddings for HS code anomaly detection.
+
+Deploy full API + Dashboard stack via Docker on AWS.
+
+Add "Chat with the Anomalies" feature (LLM-powered assistant).
