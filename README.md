@@ -70,6 +70,7 @@ pip install -r requirements.txt
 # Option 2: conda
 conda env create -f environment.yml
 conda activate trade-anomaly
+bash```
 
 ---
 
@@ -80,7 +81,7 @@ python src/ingestion/comtrade_api.py
 Train Models
 python src/modeling/train.py
 Run Dashboard
-streamlit run src/dashboard/app.py```
+streamlit run src/dashboard/app.py
 
 ---
 
